@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banasthali University - IEEE Student Branch</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background-color: #e6e6e6;
+            padding: 10px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logo-left {
+            height: 70px;
+        }
+
+        .logo-right {
+            height: 70px;
+        }
+
+        .navigation {
+            background-color: white;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navigation a {
+            color: #3d0099;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .slider-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            height: 200px;
+            margin-bottom: 80px; /* Added more space below slider */
+        }
+
+        .slider-images {
+            display: flex;
+            width: 200%;
+            position: absolute;
+            animation: slideAnimation 30s linear infinite;
+        }
+
+        @keyframes slideAnimation {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .slider-image {
+            width: 25%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .content-section {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 50px;
+            margin-top: auto; /* Push content to bottom */
+            margin-bottom: 100px; /* Add space at bottom */
+        }
+
+        .info-box {
+            background-color: #4169e1;
+            color: white;
+            width: 30%;
+            padding: 25px 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .info-box h2 {
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .info-box p {
+            margin-bottom: 20px;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        .arrow-button {
+            display: inline-block;
+            margin-top: 10px;
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .divider {
+            width: 40px;
+            height: 1px;
+            background-color: white;
+            margin: 20px auto;
+        }
+
+        .footer {
+            height: 50px;
+            background-color: #e6e6e6;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with logos -->
+    <div class="header">
+        <img src="/images/banasthali_3040813_835x547-m-Photoroom.png" class="logo-left" alt="Banasthali University Logo">
+        <img src="/images/Updated_Logo-removebg-preview.png" class="logo-right" alt="Banasthali Vidyapith IEEE Student Branch Logo">
+    </div>
+
+    <!-- Navigation -->
+    <div class="navigation">
+        <a href="ContactUs.html">Contact us</a>
+        <a href="AboutUs.html">About us</a>
+        <a href="Events.html">Events</a>
+        <a href="Team.html">Team</a>
+        
+    </div>
+
+    <!-- Slider with animation -->
+    <div class="slider-container">
+        <div class="slider-images">
+            <!-- First set of images -->
+            <img src="/images/Screenshot (358).png" alt="Students in computer lab" class="slider-image">
+            <img src="/images/Screenshot (359).png" alt="Students working with equipment" class="slider-image">
+            <img src="/images/Screenshot (360).png" alt="Students with robotic equipment" class="slider-image">
+            <img src="/images/Screenshot (361).png" alt="Students working on computers" class="slider-image">
+            
+            <!-- Duplicate set of images for continuous loop effect -->
+            <img src="/images/Screenshot (358).png" alt="Students in computer lab" class="slider-image">
+            <img src="/images/Screenshot (359).png" alt="Students working with equipment" class="slider-image">
+            <img src="/images/Screenshot (360).png" alt="Students with robotic equipment" class="slider-image">
+            <img src="/images/Screenshot (361).png" alt="Students working on computers" class="slider-image">
+        </div>
+    </div>
+
+    <!-- Content Sections - Pushed lower on the page -->
+    <div class="content-section">
+        <div class="info-box">
+            <h2>Join Us</h2>
+            <p>No matter what your background, if you are a student at the university, you are eligible for active IEEE student membership.</p>
+            <div class="divider"></div>
+            <a href="#" class="arrow-button">→</a>
+        </div>
+        <div class="info-box">
+            <h2>Get Connected</h2>
+            <p>Get in touch with us and stay updated by connecting with us on socials.</p>
+            <div class="divider"></div>
+            <a href="#" class="arrow-button">→</a>
+        </div>
+        <div class="info-box">
+            <h2>Get Involved</h2>
+            <p>Learn about your first steps to earn access to global resources and connections to help you succeed in wherever you go</p>
+            <div class="divider"></div>
+            <a href="#" class="arrow-button">→</a>
+        </div>
+    </div>
+
+    <!-- Added footer to fill empty space -->
+    <div class="footer"></div>
+
+    <script>
+        // The slider animation is now handled by CSS
+    </script>
+</body>
+</html>
