@@ -96,6 +96,9 @@
             padding: 25px 20px;
             text-align: center;
             border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            height: 250px; /* Fixed height for all boxes */
         }
 
         .info-box h2 {
@@ -107,14 +110,33 @@
             margin-bottom: 20px;
             line-height: 1.5;
             font-size: 14px;
+            flex-grow: 1; /* Allow paragraph to take available space */
         }
 
-        .arrow-button {
+        .button-container {
+            margin-top: auto; /* Push button to bottom of box */
+            padding-bottom: 15px; /* Consistent bottom padding */
+        }
+
+        .cta-button {
             display: inline-block;
-            margin-top: 10px;
-            color: white;
-            font-size: 24px;
+            padding: 8px 20px;
+            background-color: white;
+            color: #4169e1;
+            border-radius: 4px;
             text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .cta-button:hover {
+            background-color: #f0f0f0;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
 
         .divider {
@@ -144,7 +166,6 @@
         <a href="AboutUs.html">About us</a>
         <a href="Events.html">Events</a>
         <a href="Team.html">Team</a>
-        
     </div>
 
     <!-- Slider with animation -->
@@ -164,29 +185,33 @@
         </div>
     </div>
 
-    <!-- Content Sections - Pushed lower on the page -->
-  <!-- Content Sections - Pushed lower on the page -->
-<div class="content-section">
-    <div class="info-box">
-        <h2>Join Us</h2>
-        <p>No matter what your background, if you are a student at the university, you are eligible for active IEEE student membership.</p>
-        <div class="divider"></div>
-        <a href="https://www.ieee.org/membership/join/index.html?utm_source=button_text&utm_medium=lp-membership&utm_campaign=join#membership-dues" target="_blank" class="arrow-button">→</a>
+    <!-- Content Sections with consistently aligned buttons -->
+    <div class="content-section">
+        <div class="info-box">
+            <h2>Join Us</h2>
+            <p>No matter what your background, if you are a student at the university, you are eligible for active IEEE student membership.</p>
+            <div class="divider"></div>
+            <div class="button-container">
+                <a href="https://www.ieee.org/membership/join/index.html?utm_source=button_text&utm_medium=lp-membership&utm_campaign=join#membership-dues" target="_blank" class="cta-button">Learn More</a>
+            </div>
+        </div>
+        <div class="info-box">
+            <h2>Get Connected</h2>
+            <p>Get in touch with us and stay updated by connecting with us on socials.Follow us and Connect with us on LinkedIn Instagram</p>
+            <div class="divider"></div>
+            <div class="button-container">
+                <a href="https://www.instagram.com/ieeebv_official?igsh=cWkwN2g0c3Znc3Aw" target="_blank" class="cta-button">Connect Now</a>
+            </div>
+        </div>
+        <div class="info-box">
+            <h2>Get Involved</h2>
+            <p>Learn about your first steps to earn access to global resources and connections to help you succeed in wherever you go</p>
+            <div class="divider"></div>
+            <div class="button-container">
+                <a href="https://forms.gle/F9sU1UszAexUs7eA8" target="_blank" class="cta-button">Get Started</a>
+            </div>
+        </div>
     </div>
-    <div class="info-box">
-        <h2>Get Connected</h2>
-        <p>Get in touch with us and stay updated by connecting with us on socials.</p>
-        <div class="divider"></div>
-        <a href="https://www.instagram.com/ieeebv_official?igsh=cWkwN2g0c3Znc3Aw" target="_blank" class="arrow-button">→</a>
-    </div>
-    <div class="info-box">
-        <h2>Get Involved</h2>
-        <p>Learn about your first steps to earn access to global resources and connections to help you succeed in wherever you go</p>
-        <div class="divider"></div>
-        <a href="https://forms.gle/F9sU1UszAexUs7eA8" target="_blank" class="arrow-button">→</a>
-    </div>
-</div>
-
 
     <!-- Added footer to fill empty space -->
     <div class="footer"></div>
