@@ -1,22 +1,20 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head>   
-  <meta charset="UTF-8" />   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>   
-  <title>Events - Banasthali University IEEE Student Branch</title>   
-  <style>     
-    * {       
-      margin: 0;       
-      padding: 0;       
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Events - Banasthali University IEEE Student Branch</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
       box-sizing: border-box;
       font-family: Arial, sans-serif;
     }
-    
     body {
       background-color: #f5f5f5;
       min-height: 100vh;
     }
-    
     .header {
       background-color: #e6e6e6;
       padding: 10px 50px;
@@ -25,22 +23,15 @@
       align-items: center;
       border-bottom: 1px solid #ddd;
     }
-    
-    .logo-left {
+    .logo-left, .logo-right {
       height: 70px;
     }
-    
-    .logo-right {
-      height: 70px;
-    }
-    
     .navigation {
       background-color: white;
       padding: 15px 0;
       text-align: center;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
-    
     .navigation a {
       color: #3d0099;
       text-decoration: none;
@@ -48,32 +39,22 @@
       font-size: 18px;
       font-weight: 500;
     }
-    
     .navigation a.active {
       font-weight: bold;
       border-bottom: 2px solid #3d0099;
       padding-bottom: 5px;
     }
-    
-    .banner {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-    }
-    
     .events-container {
       max-width: 1200px;
       margin: 40px auto;
       padding: 0 20px;
     }
-    
     .page-title {
       color: #3d0099;
       margin-bottom: 40px;
       text-align: center;
       font-size: 32px;
     }
-    
     .events-wrap {
       display: flex;
       flex-wrap: wrap;
@@ -81,7 +62,6 @@
       gap: 30px;
       margin-bottom: 40px;
     }
-    
     .event-card {
       background-color: #4169e1;
       border-radius: 8px;
@@ -90,54 +70,39 @@
       width: 350px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
-    
     .event-content {
       padding: 20px;
     }
-    
     .event-title {
       font-size: 20px;
       margin-bottom: 15px;
       font-weight: 600;
       text-align: center;
     }
-    
     .divider {
       width: 100px;
       height: 3px;
       background-color: white;
       margin: 10px auto 20px;
     }
-    
     .event-details {
       line-height: 1.8;
     }
-    
     .detail-row {
       display: flex;
       margin-bottom: 8px;
     }
-    
     .detail-label {
       width: 70px;
       font-weight: bold;
     }
-    
     .detail-value {
       flex: 1;
     }
-    
     .event-description {
       margin-top: 15px;
       line-height: 1.6;
     }
-    
-    .arrow {
-      text-align: center;
-      margin-top: 20px;
-      font-size: 24px;
-    }
-    
     .footer {
       background-color: #e6e6e6;
       padding: 20px 0;
@@ -146,13 +111,13 @@
       color: #555;
       font-size: 14px;
     }
-  </style> 
-</head> 
-<body>  
+  </style>
+</head>
+<body>
   <!-- Header with logos -->
   <div class="header">
     <img src="/images/banasthali_3040813_835x547-m-Photoroom.png" class="logo-left" alt="Banasthali University Logo">
-    <img src="/images/Updated_Logo-removebg-preview.png" class="logo-right" alt="Banasthali Vidyapith IEEE Student Branch Logo">
+    <img src="/images/Updated_Logo-removebg-preview.png" class="logo-right" alt="IEEE Logo">
   </div>
 
   <!-- Navigation -->
@@ -163,11 +128,12 @@
     <a href="#" class="active">Events</a>
     <a href="Team.html">Team</a>
   </div>
-  
+
+  <!-- Events -->
   <div class="events-container">
     <h1 class="page-title">Upcoming Events</h1>
-    
     <div class="events-wrap">
+      <!-- Event 1 -->
       <div class="event-card">
         <div class="event-content">
           <h3 class="event-title">Orientation Program</h3>
@@ -183,13 +149,16 @@
             </div>
             <div class="detail-row">
               <div class="detail-label">Venue:</div>
-              <div class="detail-value">Automation , AUDI 1</div>
+              <div class="detail-value">Automation, AUDI 1</div>
             </div>
             <p class="event-description">
-              Kickstart your IEEE journey! Join us to meet the team, understand IEEE membership, upcoming workshops, and amazing opportunities.
+              Kickstart your IEEE journey! Meet the team, understand membership benefits, and discover upcoming opportunities.
             </p>
+          </div>
+        </div>
       </div>
-      
+
+      <!-- Event 2 -->
       <div class="event-card">
         <div class="event-content">
           <h3 class="event-title">Electrothon</h3>
@@ -208,10 +177,13 @@
               <div class="detail-value">Automation, AUDI 1</div>
             </div>
             <p class="event-description">
-                Inter-branch hardware & software hackathon with Smart Tech themes and prizes.
+              Inter-branch hardware & software hackathon with Smart Tech themes and prizes.
             </p>
+          </div>
+        </div>
       </div>
-      
+
+      <!-- Event 3 -->
       <div class="event-card">
         <div class="event-content">
           <h3 class="event-title">Patent Research & Workshop</h3>
@@ -230,15 +202,16 @@
               <div class="detail-value">Yet to be decided</div>
             </div>
             <p class="event-description">
-               Seminar on patent vs paper writing with IEEE & IPR experts.
+              Seminar on patent vs paper writing with IEEE & IPR experts.
             </p>
+          </div>
+        </div>
       </div>
-    </div>
-    
-    <div class="events-wrap">
+
+      <!-- Event 4 -->
       <div class="event-card">
         <div class="event-content">
-          <h3 class="event-title">IEEE Day Celebration </h3>
+          <h3 class="event-title">IEEE Day Celebration</h3>
           <div class="divider"></div>
           <div class="event-details">
             <div class="detail-row">
@@ -254,38 +227,42 @@
               <div class="detail-value">Yet to be decided</div>
             </div>
             <p class="event-description">
-              Fun games & Workshops + educational tech events with prizes.
+              Fun games, workshops, and educational tech events with exciting prizes.
             </p>
+          </div>
+        </div>
       </div>
-      
+
+      <!-- Event 5 -->
       <div class="event-card">
         <div class="event-content">
-          <h3 class="event-title">Get to Know </h3>
+          <h3 class="event-title">Get to Know</h3>
           <div class="divider"></div>
           <div class="event-details">
             <div class="detail-row">
               <div class="detail-label">Date:</div>
-              <div class="detail-value">October, 2025</div>
+              <div class="detail-value">To be announced</div>
             </div>
             <div class="detail-row">
               <div class="detail-label">Time:</div>
-              <div class="detail-value">5:00 PM onwards</div>
+              <div class="detail-value">To be announced</div>
             </div>
             <div class="detail-row">
               <div class="detail-label">Venue:</div>
               <div class="detail-value">Yet to be decided</div>
             </div>
             <p class="event-description">
-            Guest lecture on emerging tech – hardware & software focus.
+              An interactive session to network, explore IEEE societies, and find your tech niche.
             </p>
-         
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  
+
   <!-- Footer -->
   <div class="footer">
-    <p>© 2025 IEEE Student Branch, Banasthali University. All rights reserved.</p>
+    &copy; 2025 Banasthali Vidyapith IEEE Student Branch. All Rights Reserved.
   </div>
-</body> 
+</body>
 </html>
