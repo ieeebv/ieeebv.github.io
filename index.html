@@ -11,14 +11,15 @@
             box-sizing: border-box;
             font-family: Arial, sans-serif;
         }
-
+    
         body {
-            background-color: #f5f5f5;
+            background-color: white;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+            font-size: 16px;
         }
-
+    
         .header {
             background-color: #e6e6e6;
             padding: 10px 50px;
@@ -27,22 +28,19 @@
             align-items: center;
             border-bottom: 1px solid #ddd;
         }
-
-        .logo-left {
-            height: 70px;
-        }
-
+    
+        .logo-left,
         .logo-right {
             height: 70px;
         }
-
+    
         .navigation {
             background-color: white;
             padding: 15px 0;
             text-align: center;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-
+    
         .navigation a {
             color: #3d0099;
             text-decoration: none;
@@ -50,45 +48,46 @@
             font-size: 18px;
             font-weight: 500;
         }
-
+    
         .slider-container {
             width: 100%;
             overflow: hidden;
             position: relative;
             height: 200px;
-            margin-bottom: 80px; /* Added more space below slider */
+            margin-bottom: 80px;
         }
-
+    
         .slider-images {
             display: flex;
             width: 200%;
             position: absolute;
             animation: slideAnimation 30s linear infinite;
         }
-
+    
         @keyframes slideAnimation {
             0% {
                 transform: translateX(0);
             }
+    
             100% {
                 transform: translateX(-50%);
             }
         }
-
+    
         .slider-image {
             width: 25%;
             height: 200px;
             object-fit: cover;
         }
-
+    
         .content-section {
             display: flex;
             justify-content: space-around;
             padding: 40px 50px;
-            margin-top: auto; /* Push content to bottom */
-            margin-bottom: 100px; /* Add space at bottom */
+            margin-top: auto;
+            margin-bottom: 100px;
         }
-
+    
         .info-box {
             background-color: #4169e1;
             color: white;
@@ -97,18 +96,18 @@
             text-align: center;
             border-radius: 5px;
         }
-
+    
         .info-box h2 {
             margin-bottom: 15px;
             font-size: 24px;
         }
-
+    
         .info-box p {
             margin-bottom: 20px;
             line-height: 1.5;
             font-size: 14px;
         }
-
+    
         .arrow-button {
             display: inline-block;
             margin-top: 10px;
@@ -116,20 +115,83 @@
             font-size: 24px;
             text-decoration: none;
         }
-
+    
         .divider {
             width: 40px;
             height: 1px;
             background-color: white;
             margin: 20px auto;
         }
-
+    
         .footer {
             height: 50px;
             background-color: #e6e6e6;
             margin-top: auto;
         }
+    
+        /* Tablet view (less than 992px) */
+        @media (max-width: 992px) {
+            body {
+                font-size: 15px;
+            }
+    
+            .content-section {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                padding: 30px 20px;
+            }
+    
+            .info-box {
+                width: 80%;
+            }
+    
+            .navigation a {
+                margin: 0 10px;
+                font-size: 16px;
+            }
+        }
+    
+        /* Mobile view (less than 768px) */
+        @media (max-width: 768px) {
+            body {
+                font-size: 14px;
+                background-color: #f0f0f0;
+            }
+    
+            .header {
+                flex-direction: column;
+                padding: 10px 20px;
+                text-align: center;
+            }
+    
+            .logo-left,
+            .logo-right {
+                height: 50px;
+                margin: 10px 0;
+            }
+    
+            .navigation a {
+                display: block;
+                margin: 10px 0;
+                font-size: 16px;
+            }
+    
+            .slider-image {
+                width: 50%;
+            }
+    
+            .content-section {
+                flex-direction: column;
+                padding: 20px;
+            }
+    
+            .info-box {
+                width: 100%;
+            }
+        }
     </style>
+    
 </head>
 <body>
     <!-- Header with logos -->
